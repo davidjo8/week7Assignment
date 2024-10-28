@@ -30,10 +30,6 @@ public class ProjectsApp {
 		
 	}
 	
-	/*
-	 * This method prints the operations, gets a user menu selection and performs the operation.
-	 * It repeats until the user terminates the application.
-	 */
 
 	private void processUserSelections() {
 		boolean done = false;
@@ -65,7 +61,7 @@ public class ProjectsApp {
 	}
 
 	/*
-	 * Get user input for a project row then call the project service to create a row.
+	 * Get user input for a project row
 	 */
 
 	private void createProject() {
@@ -87,15 +83,6 @@ public class ProjectsApp {
 		System.out.println("You have successfully created project: " + dbProject);
 	}
 	
-
-	/*
-	 * Get the user's input and convert it to a BigDecimal.
-	 * 
-	 * @param prompt The prompt to display on the console.
-	 * @return A BigDecimal value if successful.
-	 * @throws DbException Thrown if an error occurs converting the number to a BigDecimal.
-	 */
-	
 	private BigDecimal getDecimalInput(String prompt) {
 		String input = getStringInput(prompt);
 		
@@ -104,7 +91,7 @@ public class ProjectsApp {
 		}
 		try {
 			/*
-			 * Create the BigDecimal object and set it to 2 decimal places.
+			 * Create the BigDecimal object and set it to 2 decimal places
 			 */
 			return new BigDecimal(input).setScale(2);
 		}
@@ -114,7 +101,7 @@ public class ProjectsApp {
 	}
 	
 	/*
-	 * Used for exiting the application.
+	 * Used for exiting the application
 	 */
 	
 	private boolean exitMenu() {
@@ -152,7 +139,7 @@ public class ProjectsApp {
 	}
 	
 	/*
-	 * Print the menu selections, one per line.
+	 * Print the menu selections. One per line
 	 */
 
 
