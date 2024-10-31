@@ -179,5 +179,9 @@ public class ProjectsApp {
 				System.out.println("\nYou are working with a project: " + curProject);
 			}
 		}
+<<<<<<< HEAD
 	}
 
+=======
+	}
+>>>>>>> b86a9af (week 10 assignment)
